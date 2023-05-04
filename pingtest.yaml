@@ -1,1 +1,7 @@
-ansible all -m ping -i myinventory
+- name: This is my first playbook
+  hosts: all
+
+  tasks:
+    - name: Create an user
+      user: name="deepthi" state="present"
+
